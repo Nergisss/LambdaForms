@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+//using LambdaForums.Services;
 using LambdaForums.Models;
 
 namespace LambdaForums
@@ -40,6 +41,8 @@ namespace LambdaForums
                 .AddEntityFrameworkStores<CommandContext>();
                 services.AddDbContext<CommandContext>
                         (opt=>opt.UseSqlServer(Configuration["Data:CommandAPIConnection:ConnectionString"]));
+            
+            //services.AddScoped<ForumService, IForumService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

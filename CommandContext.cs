@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using LambdaForums.Models;
 
-namespace LambdaForums.Models
+namespace LambdaForums
 {
     public class CommandContext:DbContext
     {

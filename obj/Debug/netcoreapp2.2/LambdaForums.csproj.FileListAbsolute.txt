@@ -1,4 +1,3 @@
-C:\Users\casper\desktop\LambdaForums\bin\Debug\netcoreapp2.2\app.db
 C:\Users\casper\desktop\LambdaForums\bin\Debug\netcoreapp2.2\LambdaForums.deps.json
 C:\Users\casper\desktop\LambdaForums\bin\Debug\netcoreapp2.2\LambdaForums.runtimeconfig.json
 C:\Users\casper\desktop\LambdaForums\bin\Debug\netcoreapp2.2\LambdaForums.runtimeconfig.dev.json
