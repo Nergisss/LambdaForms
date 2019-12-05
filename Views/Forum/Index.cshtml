@@ -8,7 +8,9 @@
         {
             <tr>
                 <td>
+                    <a asp-action="Topic" asp-controller="Forum" asp-route-id="@forum.Id">
                     @forum.Name
+                    </a>
                 </td>
                 <td>
                     @forum.Description
