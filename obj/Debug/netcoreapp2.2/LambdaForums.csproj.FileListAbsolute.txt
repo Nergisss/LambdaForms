@@ -30,3 +30,4 @@ C:\Users\casper\desktop\LambdaForums\obj\Debug\netcoreapp2.2\LambdaForums.Views.
 C:\Users\casper\desktop\LambdaForums\obj\Debug\netcoreapp2.2\LambdaForums.dll
 C:\Users\casper\desktop\LambdaForums\obj\Debug\netcoreapp2.2\LambdaForums.pdb
 C:\Users\casper\desktop\LambdaForums\obj\Debug\netcoreapp2.2\LambdaForums.csproj.CopyComplete
+C:\Users\casper\desktop\LambdaForums\obj\Debug\netcoreapp2.2\Razor\Views\Forum\Index.g.cshtml.cs

@@ -2986,6 +2986,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\casper\\desktop\\LambdaForums\\Views\\Forum\\Index.cshtml",
+      "TargetPath": "Views\\Forum\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\casper\\desktop\\LambdaForums\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

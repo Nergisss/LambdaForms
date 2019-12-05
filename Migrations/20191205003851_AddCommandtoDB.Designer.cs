@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LambdaForums.Migrations
 {
     [DbContext(typeof(CommandContext))]
-    [Migration("20191204215558_AddCommandtoDB")]
+    [Migration("20191205003851_AddCommandtoDB")]
     partial class AddCommandtoDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
