@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+using LambdaForums.Models.Forums;
 namespace LambdaForums.Models
 {
     public class Forum

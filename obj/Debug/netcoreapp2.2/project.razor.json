@@ -2981,8 +2981,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\casper\\desktop\\LambdaForums\\Views\\Post\\Index.cshtml",
+      "TargetPath": "Views\\Post\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\casper\\desktop\\LambdaForums\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\casper\\desktop\\LambdaForums\\Views\\Forum\\Topic.cshtml",
+      "TargetPath": "Views\\Forum\\Topic.cshtml",
       "FileKind": "mvc"
     },
     {

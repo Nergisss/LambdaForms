@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using LambdaForums.Models.Posts;
 using LambdaForums.Services;
 using LambdaForums.Models;
+using LambdaForums.Models.Forums;
 
 namespace LambdaForums.Controllers
 {
@@ -14,9 +15,10 @@ namespace LambdaForums.Controllers
     {
         private readonly IForumServices _forumServices;
         private readonly IPost _postServices;
-        public ForumController(IForumServices forumServices)
+        public ForumController(IForumServices forumServices,IPost postServices)
         {
             _forumServices=forumServices;
+            _postServices=postServices;
         }
         public IActionResult Index()
         {
@@ -36,10 +38,42 @@ namespace LambdaForums.Controllers
 
         public IActionResult Topic(int Id)
         {
-            var forum=_forumServices.GetById(Id);
-            //var posts=_postServices.GetFilteredPosts(ıd);
-            //var postListings=
-            return View();
+            var forum = _forumServices.GetById(Id);
+            var posts = forum.Posts;
+            var postListings = posts.Select(post => new PostListingModel
+            {
+                Id=post.Id,
+                AuthorId=post.User.Id,
+                AuthorRating=post.User.Rating,
+                Title=post.Title,
+                DatePosted=post.Created.ToString(),
+                RepliesCount=post.Replies.Count(),
+                Forum=BuildForumListing(post)
+
+            });
+            var model=new ForumTopicModel
+            {
+                Posts=postListings,
+                Forum=BuildForumListing(forum)
+            };
+            return View(model);
+        }
+        private ForumListingModel BuildForumListing(Post post)
+        {
+            var forum=post.Forum;
+           return BuildForumListing(forum);
+        }
+        private ForumListingModel BuildForumListing(Forum forum)
+        {
+            
+            return new ForumListingModel
+            {
+                Id=forum.Id,
+                Name=forum.Title,
+                Description=forum.Description,
+                ImageUrl=forum.ImageUrl
+
+            };
         }
     
     }

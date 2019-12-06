@@ -43,6 +43,7 @@ namespace LambdaForums
                         (opt=>opt.UseSqlServer(Configuration["Data:CommandAPIConnection:ConnectionString"]));
             
             services.AddScoped<IForumServices, ForumServices>();
+            services.AddScoped<IPost, PostServices>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

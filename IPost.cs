@@ -11,9 +11,12 @@ namespace LambdaForums
         Post GetById(int id);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(string searchQuery);
+        IEnumerable<Post> GetPostsByForum(int Id);
+
+        
         Task Add(Post post);
         Task Delete(int Id);
         Task EditPostContent(int id,string newContent);
-        //Task AddReply(PostReply reply);
+        
     }
 }
